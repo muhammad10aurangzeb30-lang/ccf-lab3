@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a basic HTML boilerplate that includes standard sections, inline CSS styling, and simple JavaScript.</p>
+
+        <h3>Sample Features</h3>
+        <ul>
+            <li>Responsive layout structure</li>
+            <li>Clean, styled typography</li>
+            <li>Interactive JavaScript button</li>
+        </ul>
+
+        <!-- Interactive Button -->
+        <button onclick="showMessage()">Click Me</button>
+        <p id="output-message" style="margin-top: 15px; font-weight: bold;"></p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Sample Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Script -->
+    <script>
+        function showMessage() {
+            document.getElementById('output-message').innerText = 'Hello! You clicked the button.';
+        }
+    </script>
+
+</body>
+</html>
